@@ -3,3 +3,5 @@ node_modules
 .idea
 package-lock.json
 desktop.ini
+app/scss/_mixin.scss
+app/scss/_templates.scss
