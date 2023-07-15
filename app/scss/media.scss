@@ -36,6 +36,7 @@
       right: -103vw;
       top: 60px;
       transition: right .4s linear;
+      z-index: 999999;
 
       .nav__item__link {
         border-bottom: 1px solid #0f5132;
