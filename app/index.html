@@ -6,9 +6,9 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Breathtaking Apps</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -28,10 +28,12 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script src="app/js/app.min.js" defer></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.min.css">
+  <script type="module" src="./js/app.min.js" defer></script>
 </head>
 <body>
-<div class="header">
+<div class="header" id="dn">
   <div class="header__overlay"></div>
   <div class="header__body">
     <div class="header__logo">
@@ -60,9 +62,9 @@
       <img src="images/logo_white.png" alt="logo_white.png">
     </object>
   </div>
-  <ul class="nav__items nav__items__active">
+  <ul class="nav__items" id="nav_active">
     <li class="nav__item"><a href="#" class="nav__item__link">home</a></li>
-    <li class="nav__item"><a href="#" class="nav__item__link">about</a></li>
+    <li class="nav__item"><a href="#" class="nav__item__link nav__item__link__active">about</a></li>
     <li class="nav__item"><a href="#" class="nav__item__link">what we do</a></li>
     <li class="nav__item"><a href="#" class="nav__item__link">team</a></li>
     <li class="nav__item"><a href="#" class="nav__item__link">portfolio</a></li>
@@ -70,42 +72,594 @@
     <li class="nav__item"><a href="#" class="nav__item__link">clients</a></li>
     <li class="nav__item"><a href="#" class="nav__item__link">contact</a></li>
   </ul>
-  <button class="mobile__menu__btn"></button>
+  <button class="mobile__menu__btn" id="mobile_menu">
+    <span class="mobile__btn__line"></span>
+  </button>
 </div>
-<h4>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam assumenda at atque consequatur cum cupiditate,
-  deserunt dolore dolorem doloremque ducimus eius error est excepturi explicabo fuga harum id, impedit maiores maxime
-  minus natus nihil nobis nulla porro qui, quidem quis ratione recusandae repudiandae sequi sint tenetur veritatis? Ab
-  animi consequuntur dolore ea eaque fuga illum ipsa ipsum iusto maxime minima neque obcaecati omnis, quae quasi saepe
-  sunt, ullam vero voluptatem voluptatibus! Animi, distinctio, omnis? Atque cumque error id, ipsa magnam molestiae
-  pariatur. Aspernatur atque consectetur consequatur corporis delectus dolor dolores eaque eius eligendi eveniet fugit
-  ipsum, labore, minus neque nisi nulla numquam, odio quisquam quod reprehenderit soluta sunt tempora totam veniam
-  voluptatum. Accusantium alias amet asperiores cum quasi quo, similique. Error et fuga inventore ipsa iusto nemo non
-  placeat ratione, similique ullam. Aperiam beatae consectetur consequatur dolores maiores praesentium quod similique.
-  Amet aperiam cupiditate deserunt itaque pariatur provident quos sunt suscipit, vel. Animi aperiam architecto autem,
-  cum dicta ducimus eligendi eos est fuga id impedit iure maxime natus neque nihil non odit omnis optio possimus
-  provident quam quo, sit. Ab accusantium consectetur dolorum ipsa labore numquam obcaecati saepe. Atque consequatur
-  cupiditate expedita ipsam ipsum numquam optio provident quisquam tempora unde! Aliquam aut culpa, cumque debitis
-  delectus eaque eligendi et ex exercitationem facilis fugiat id in nam nemo nisi odio officiis pariatur provident quam,
-  quia recusandae reprehenderit repudiandae soluta sunt tempore velit voluptatem? Ab alias asperiores assumenda at
-  deleniti dolore dolorem dolorum, ea enim error est ex exercitationem facere in itaque iure laboriosam maxime minima
-  modi necessitatibus, nesciunt nostrum numquam odio officiis perferendis quae quam quidem repellat velit veritatis.
-  Adipisci animi asperiores assumenda cum cumque deleniti deserunt dicta dolores earum et eum ipsam laboriosam maiores
-  minima modi nam necessitatibus nulla perspiciatis praesentium quam quidem quos sunt, temporibus ullam voluptatem.
-  Aliquid beatae consequatur deleniti deserunt est exercitationem id, inventore, laudantium, magni natus nostrum
-  quisquam quod reprehenderit repudiandae sint totam vel. A, ad blanditiis eligendi esse et ipsam nostrum totam. Dolorem
-  dolorum esse eveniet facere facilis ipsam nihil omnis, quae quaerat, soluta, tempora tempore? Accusantium aliquid amet
-  aspernatur consequatur dolorum magni officia provident tempora voluptates voluptatum. Aliquid amet aspernatur
-  corporis, cum dolores eos error natus nesciunt nostrum obcaecati officia officiis quo reprehenderit sit totam
-  voluptate voluptates. Ad aliquam amet asperiores aut beatae deleniti dolor ea, eius explicabo illo laudantium
-  necessitatibus nobis nostrum perferendis quasi recusandae rem voluptatum. Facere iste labore non odio voluptatum.
-  Adipisci alias aliquam aspernatur delectus, deserunt dignissimos doloribus et eveniet exercitationem fugiat labore
-  libero, magni maiores minima odit praesentium quae quasi rem repellat, saepe sint tenetur unde vel veniam voluptas.
-  Minus optio quae repellat voluptatum! Accusantium adipisci beatae blanditiis consectetur cum error esse ex explicabo
-  illum incidunt iure labore libero maxime mollitia nostrum nulla, omnis pariatur possimus quam quasi quia quo repellat
-  sapiente tempora vitae voluptas voluptate. Aliquam aperiam at consectetur debitis distinctio dolorem doloremque
-  dolores earum esse expedita facilis hic illo incidunt ipsam laudantium molestias nisi odio pariatur perferendis, quas
-  qui quo rem, repellat repellendus similique veniam voluptates.
-</h4>
+<div class="main">
+  <div class="container">
+    <div class="we_are_omega_wrapper">
+      <div class="we_are_omega">
+        <div class="omega__inner__text">
+          <p class="omega__title">We Are Omega</p>
+          <h3 class="omega__slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti distinctio
+            dolorem eaque id maiores necessitatibus repellat repellendus reprehenderit totam.</h3>
+          <span class="omega__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam magnam mollitia neque numquam quis quo rem similique. Aliquid at labore quibusdam tempora totam! Animi atque commodi doloremque eligendi, enim eos error et excepturi facere fuga fugiat id laborum mollitia nam porro quisquam recusandae repellat repellendus soluta suscipit tempora unde.</span>
+        </div>
+        <div class="omega__inner__img">
+          <img src="images/phone.png" alt="phone.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="what__we__do_block">
+    <div class="container">
+      <div class="what__we__do">
+        <div class="we__do_top_inner_text">
+          <p class="we__do__title">What We Do</p>
+          <h3 class="we__do__slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur
+            corporis eaque magnam perspiciatis quam sapiente similique tempora tempore, voluptas.</h3>
+        </div>
+        <div class="we__do__bottom_block">
+          <div class="we__do__bottom_wrapper">
+            <a href="#" class="we__do__button_container">
+              <i class="fa-solid fa-thumbs-up"></i>
+            </a>
+            <div class="we__do__bottom__text">
+              <h3 class="bottom__button__heading">unique design</h3>
+              <p class="bottom__button__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                error incidunt iure, qui rem saepe voluptates! Dolorum illo in iure!</p>
+            </div>
+          </div>
+          <div class="we__do__bottom_wrapper">
+            <a href="#" class="we__do__button_container">
+              <i class="fa-solid fa-headphones"></i>
+            </a>
+            <div class="we__do__bottom__text">
+              <h3 class="bottom__button__heading">friendly support</h3>
+              <p class="bottom__button__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+                deserunt.</p>
+            </div>
+          </div>
+          <div class="we__do__bottom_wrapper">
+            <a href="#" class="we__do__button_container">
+              <i class="fa-sharp fa-solid fa-star"></i>
+            </a>
+            <div class="we__do__bottom__text">
+              <h3 class="bottom__button__heading">creative solution</h3>
+              <p class="bottom__button__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio
+                optio perferendis quasi quisquam vero?</p>
+            </div>
+          </div>
+          <div class="we__do__bottom_wrapper">
+            <a href="#" class="we__do__button_container">
+              <i class="fa-sharp fa-solid fa-box"></i>
+            </a>
+            <div class="we__do__bottom__text">
+              <h3 class="bottom__button__heading">out of the box ideas</h3>
+              <p class="bottom__button__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                error incidunt iure, qui rem saepe voluptates! Dolorum illo in iure!</p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section__statistics">
+  <div class="container">
+    <div class="statistics__items__wrap">
+      <div class="statistics__item__inner">
+        <div class="statistics__box__icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <h3 class="statistics__item__caption">54320</h3>
+        <p class="statistics__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="statistics__item__inner">
+        <div class="statistics__box__icon">
+          <i class="fa-sharp fa-solid fa-gavel"></i>
+        </div>
+        <h3 class="statistics__item__caption">185200</h3>
+        <p class="statistics__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="statistics__item__inner">
+        <div class="statistics__box__icon">
+          <i class="fa-sharp fa-solid fa-trophy"></i>
+        </div>
+        <h3 class="statistics__item__caption">367</h3>
+        <p class="statistics__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="statistics__item__inner">
+        <div class="statistics__box__icon">
+          <i class="fa-sharp fa-solid fa-download"></i>
+        </div>
+        <h3 class="statistics__item__caption">251060</h3>
+        <p class="statistics__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="team">
+  <div class="container">
+    <div class="team__wrapper">
+      <div class="team__inner">
+        <h3 class="team__title">Meet the team</h3>
+        <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda blanditiis
+          consequuntur debitis dignissimos dolorem dolores dolorum eius esse, ex excepturi expedita fugiat incidunt
+          maiores maxime modi molestias necessitatibus nostrum optio quia quibusdam quisquam quo recusandae totam
+          voluptatibus? Delectus est explicabo fuga laborum, molestiae nemo praesentium quae rem sapiente? Incidunt!</p>
+      </div>
+    </div>
+  </div>
+  <div class="container__slider">
+    <div class="slider__wrapper" id="slider">
+      <div class="box__slider">
+        <div class="slider__inner">
+          <div class="ribbon" id="sl_ribbon">
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/4e6c4bd0-1e72-495f-b1a7-7eab1a7d1ca8.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/705c9b89-f299-4088-be68-733fe2f29242.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/89a8b9e8-55b0-44dc-b330-d58969bfebae.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/69142706-0c88-4943-a29a-da25f538d8f7.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/09e28733-b913-4c49-9f4d-fff8e7247f4e.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/dd17b3d3-65f0-4de9-bae0-fd6b27ee8163.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/f3fd61d2-c452-43f1-a78b-81dcfc78fc4e.jpg" alt="team_img">
+              </div>
+            </div>
+            <div class="box__img">
+              <div class="inner__img">
+                <div class="box__img__overlay"></div>
+                <img src="images/team_img/fe8e49fb-af8e-44f3-ae78-395a53974152.jpg" alt="team_img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="sl__btn sl__btn__left sl__btn__disabled"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="sl__btn sl__btn__right"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <div class="slider__el__inf">
+    <div class="container">
+      <div class="slider__el__inf__wrapper">
+        <div class="slider__person__info__inner">
+          <h3 class="person__name">JOli</h3>
+          <h4 class="person__job">manager</h4>
+          <p class="person__inf__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam cum eos
+            eum exercitationem expedita
+            fuga id illum libero modi nostrum numquam officia, quae quia reprehenderit similique ullam velit
+            voluptate.</p>
+          <div class="person__soc_box">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="slider__person__progressbar__inner">
+          <div class="person__progressbar__box">
+            <span class="person__progressbar__title">Lorem ipsum. <strong class="number__percent">(95%)</strong></span>
+            <div class="person__progressbar">
+              <div class="person__progressbar_percent"></div>
+            </div>
+          </div>
+          <div class="person__progressbar__box">
+            <span class="person__progressbar__title">Lorem ipsum. <strong class="number__percent">(95%)</strong></span>
+            <div class="person__progressbar">
+              <div class="person__progressbar_percent"></div>
+            </div>
+          </div>
+          <div class="person__progressbar__box">
+            <span class="person__progressbar__title">Lorem ipsum. <strong class="number__percent">(95%)</strong></span>
+            <div class="person__progressbar">
+              <div class="person__progressbar_percent"></div>
+            </div>
+          </div>
+          <div class="person__progressbar__box">
+            <span class="person__progressbar__title">Lorem ipsum. <strong class="number__percent">(95%)</strong></span>
+            <div class="person__progressbar">
+              <div class="person__progressbar_percent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="weve__done">
+  <div class="container">
+    <div class="weve__done__inner">
+      <h3 class="weve__done__title">What we've done</h3>
+      <p class="weve__done__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A commodi consequatur
+        consequuntur cupiditate eveniet excepturi expedita in libero minus nulla, perferendis qui reiciendis tenetur
+        vitae voluptatem voluptates voluptatibus? Et, incidunt.</p>
+    </div>
+  </div>
+  <div class="weve__done__tabs">
+    <div class="weve_done__list__tabs" id="weve_tabs">
+      <button class="item__tabs item__tabs__active">All</button>
+      <button class="item__tabs">Logo Design</button>
+      <button class="item__tabs">Mobile Development</button>
+      <button class="item__tabs">Painting</button>
+      <button class="item__tabs">Design 3D</button>
+    </div>
+    <div class="work__list__img__wrapper" id="work__list">
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/20c8b22a-fe97-4d8c-bbc7-35315f42539d.jpg" alt="20c8b22a-fe97-4d8c-bbc7-35315f42539d.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/32ef4518-9040-4d39-bf83-ca976f518cc3.jpg" alt="32ef4518-9040-4d39-bf83-ca976f518cc3.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/60f6578b-25dd-40d3-80d9-5e0dcdde167b.jpg" alt="60f6578b-25dd-40d3-80d9-5e0dcdde167b.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/66dd2607-738e-4d79-a2d4-cf32e48f3330.jpg" alt="66dd2607-738e-4d79-a2d4-cf32e48f3330.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/501e2efc-6a6c-444e-9ba1-8b830b464b1b.jpg" alt="501e2efc-6a6c-444e-9ba1-8b830b464b1b.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/515ce47c-86e4-45f1-b4b2-e278f1fec697.jpg" alt="515ce47c-86e4-45f1-b4b2-e278f1fec697.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/723ed400-5254-48c5-9329-f441ecc47857.jpg" alt="723ed400-5254-48c5-9329-f441ecc47857.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/2822ba6d-b1b0-41ef-908e-3100d1ac044f.jpg" alt="2822ba6d-b1b0-41ef-908e-3100d1ac044f.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/5817e8ae-919e-4898-b787-4d9b6418adc6.jpg" alt="5817e8ae-919e-4898-b787-4d9b6418adc6.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/6815dcde-cf9d-4106-9cf7-089716df07d4.jpg" alt="6815dcde-cf9d-4106-9cf7-089716df07d4.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/6735432d-cdf7-4bcb-9d66-978ed3d51223.jpg" alt="6735432d-cdf7-4bcb-9d66-978ed3d51223.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/47991704-2c40-4ffa-ad08-8ac60c15c2b5.jpg" alt="47991704-2c40-4ffa-ad08-8ac60c15c2b5.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/96251464-2040-464c-9b8c-01b16b2f83de.jpg" alt="96251464-2040-464c-9b8c-01b16b2f83de.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/b4e341f9-863b-4623-84bf-92fcba83dc59.jpg" alt="b4e341f9-863b-4623-84bf-92fcba83dc59.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/cebcc5a6-94ce-4874-aea5-7f48a4d619cf.jpg" alt="cebcc5a6-94ce-4874-aea5-7f48a4d619cf.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/f119fa08-4ebf-48be-81a1-e09ea860ddce.jpg" alt="f119fa08-4ebf-48be-81a1-e09ea860ddce.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+      <div class="work__img__inner">
+        <div class="work__img__overlay">
+          <i class="fa-sharp fa-solid fa-maximize"></i>
+        </div>
+        <img src="images/work/f01204de-610a-4a1d-88aa-befb633e08d3.jpg" alt="f01204de-610a-4a1d-88aa-befb633e08d3.jpg">
+        <div class="work__img__text">
+          <h4 class="work__img__name">Lorem ipsum.</h4>
+          <h5 class="work__company__name">Lorem ipsum.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--window__none-->
+<!--window__none-->
+<!--window__none-->
+<div class="spitting_window window__none">
+  <button class="clos__spitting_window">&#215</button>
+  <div class="container__img"></div>
+</div>
+<!--window__none-->
+<!--window__none-->
+<!--window__none-->
+
+
+<div class="pricing__tables">
+  <div class="container">
+    <div class="pricing__tables__wrapper">
+      <div class="pricing__tables__text">
+        <h3 class="pricing__tables__title">Pricing tables</h3>
+        <p class="pricing__tables__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa
+          deleniti ex
+          fuga fugiat harum laborum odio porro possimus qui repellendus reprehenderit, velit vero. Doloribus excepturi
+          maxime sed voluptates voluptatibus?</p>
+      </div>
+      <div class="pricing__tables__row">
+        <div class="pricing__tables__col">
+          <h3 class="col__price_name">basic</h3>
+          <h3 class="col__price"><span class="col__price__Sign">&#36;</span><span class="col__price__money">299</span>
+            <span class="col__price__month">/month</span></h3>
+          <p class="col_desc">Lorem ipsum.</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet.</p>
+          <p class="col_desc">Lorem ipsum dolor sit.</p>
+          <p class="col_desc">lorem</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <a href="#" class="col__price__btn">Signup Now</a>
+        </div>
+        <div class="pricing__tables__col">
+          <h3 class="col__price_name">standard</h3>
+          <h3 class="col__price"><span class="col__price__Sign">&#36;</span><span class="col__price__money">399</span>
+            <span class="col__price__month">/month</span></h3>
+          <p class="col_desc">Lorem ipsum.</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet.</p>
+          <p class="col_desc">Lorem ipsum dolor sit.</p>
+          <p class="col_desc">lorem</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <a href="#" class="col__price__btn">Signup Now</a>
+        </div>
+        <div class="pricing__tables__col increasingly__taking">
+          <h3 class="col__price_name">premium</h3>
+          <h3 class="col__price"><span class="col__price__Sign">&#36;</span><span class="col__price__money">499</span>
+            <span class="col__price__month">/month</span></h3>
+          <p class="col_desc">Lorem ipsum.</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet.</p>
+          <p class="col_desc">Lorem ipsum dolor sit.</p>
+          <p class="col_desc">lorem</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <a href="#" class="col__price__btn">Signup Now</a>
+        </div>
+        <div class="pricing__tables__col">
+          <h3 class="col__price_name">professional</h3>
+          <h3 class="col__price"><span class="col__price__Sign">&#36;</span><span class="col__price__money">599</span>
+            <span class="col__price__month">/month</span></h3>
+          <p class="col_desc">Lorem ipsum.</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet.</p>
+          <p class="col_desc">Lorem ipsum dolor sit.</p>
+          <p class="col_desc">lorem</p>
+          <p class="col_desc">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <a href="#" class="col__price__btn">Signup Now</a>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div class="our__clients">
+  <div class="container">
+    <div class="our__clients__wrapper">
+      <div class="our__clients__text__inner">
+        <h3 class="our__clients__title">Our clients</h3>
+        <p class="our__clients__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, inventore iste
+          maiores nostrum quidem reiciendis saepe similique voluptatibus. Ad assumenda debitis est illo in inventore non
+          perferendis placeat repudiandae soluta?</p>
+      </div>
+      <div class="our__clients__logo__inner">
+        <div class="our__client__logo__inner">
+          <div class="client__logo__box">
+            <img src="images/our__clients/apple-logo-23-1024x1024.png" alt="apple-logo-23-1024x1024.png">
+          </div>
+          <span class="client__logo__text">Lorem.</span>
+        </div>
+        <div class="our__client__logo__inner">
+          <div class="client__logo__box">
+            <img src="images/our__clients/car_logo_PNG1665.png" alt="car_logo_PNG1665.png">
+          </div>
+          <span class="client__logo__text">Lorem.</span>
+        </div>
+        <div class="our__client__logo__inner">
+          <div class="client__logo__box">
+            <img src="images/our__clients/Warcraft-Logo-PNG-Free-Download.png"
+                 alt="Warcraft-Logo-PNG-Free-Download.png">
+          </div>
+          <span class="client__logo__text">Lorem.</span>
+        </div>
+        <div class="our__client__logo__inner">
+          <div class="client__logo__box">
+            <img src="images/our__clients/pngimg.com%20-%20car_logo_PNG1651.png"
+                 alt="pngimg.com%20-%20car_logo_PNG1651.png">
+          </div>
+          <span class="client__logo__text">Lorem.</span>
+        </div>
+        <div class="our__client__logo__inner">
+          <div class="client__logo__box">
+            <img src="images/our__clients/pngimg.com%20-%20car_logo_PNG1658.png"
+                 alt="pngimg.com%20-%20car_logo_PNG1658.png">
+          </div>
+          <span class="client__logo__text">Lorem.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="block__form">
+  <div class="container">
+    <div class="form__wrapper">
+      <h3 class="form__text">Contact Us</h3>
+      <form action="" method="post" class="main__form">
+      <span class="input_span">
+        <label for="id_form-email">
+        <input type="email" id="id_form-email" placeholder="email" required>
+      </label>
+    <label for="id_form-name">
+        <input type="text" id="id_form-name" placeholder="name" required>
+      </label>
+    <label for="id_form-question">
+        <input type="email" id="id_form-question" placeholder="Your question" required>
+      <!--      <span></span>-->
+      </label>
+      </span>
+        <label class="label__textarea">
+          <textarea placeholder="detailed explanation" maxlength="500"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="main__footer">
+  <div class="container">
+    <div class="main__footer__wrapper">
+      
+      <div class="block__license"><span class="license">@License</span><span class="data__license">20/20/2020</span>
+      </div>
+      <div class="footer__soc__buttons">
+        <a href="#" class="soc__button">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="soc__button">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="soc__button">
+          <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+        <a href="#" class="soc__button">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

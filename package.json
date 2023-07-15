@@ -24,12 +24,11 @@
     "sass": "^1.55.0"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/SafaryanA/breathtaking_apps.git"
-    },
+    "type": "git",
+    "url": "git+https://github.com/SafaryanA/breathtaking_apps.git"
+  },
   "bugs": {
     "url": "https://github.com/SafaryanA/breathtaking_apps/issues"
   },
   "homepage": "https://github.com/SafaryanA/breathtaking_apps#readme"
 }
-

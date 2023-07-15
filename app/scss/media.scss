@@ -1,9 +1,3 @@
-@media screen and (max-width: 1400px) {
-}
-
-@media screen and (max-width: 1200px) {
-}
-
 @media screen and (max-width: 960px) {
   .header {
     padding: 30px 0;
@@ -30,18 +24,22 @@
     }
   }
   .nav {
+    .mobile__menu__btn {
+      display: block;
+    }
+
     .nav__items {
       width: 50vw;
       flex-direction: column;
       position: absolute;
       text-align: center;
-      right: -100vw;
-      top: 50px;
-      transition: right .3s linear;
+      right: -103vw;
+      top: 60px;
+      transition: right .4s linear;
 
       .nav__item__link {
         border-bottom: 1px solid #0f5132;
-        padding: 15px 0 !important;
+        padding: 15px 0;
       }
     }
 
@@ -49,21 +47,170 @@
       right: 0;
     }
   }
+  .we_are_omega {
+    .omega__inner__text {
+      flex-basis: 100%;
+
+      .omega__slogan {
+        font-size: 24px;
+      }
+    }
+
+
+    .omega__inner__img {
+      display: none;
+    }
+  }
+  .what__we__do {
+    .we__do_top_inner_text {
+      .we__do__slogan {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .we__do__bottom_block {
+    padding-top: 0;
+    flex-wrap: wrap;
+
+    .we__do__bottom_wrapper {
+      flex: 0 0 50%;
+
+    }
+
+  }
+  .statistics__items__wrap {
+    flex-wrap: wrap;
+
+    .statistics__item__inner {
+      flex-basis: 50%;
+    }
+  }
+  .weve__done {
+    .weve__done__inner {
+      .weve__done__text {
+        font-size: 24px;
+      }
+    }
+  }
+  .weve__done {
+    .work__list__img__wrapper {
+      .work__img__inner {
+        flex-basis: 50%;
+        height: 50vw;
+      }
+    }
+  }
+  .pricing__tables {
+    .pricing__tables__wrapper {
+      .pricing__tables__text {
+        font-size: 24px;
+      }
+    }
+
+    .pricing__tables__cols {
+      flex-wrap: wrap;
+
+      .pricing__tables__col {
+        flex: 0 0 calc(50% - 40px);
+      }
+    }
+  }
+  .our__clients__wrapper {
+    .our__clients__text__inner {
+      .our__clients__text {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .box__slider {
+    .slider__inner {
+      height: 260px;
+    }
+  }
+  .box__img {
+    .inner__img {
+      height: 250px;
+    }
+  }
+  .slider__el__inf {
+    .slider__el__inf__wrapper {
+      flex-direction: column;
+    }
+  }
+
 }
 
-
 @media screen and (max-width: 720px) {
+  .our__clients__logo__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .our__client__logo__inner {
+      padding-top: 30px;
+      flex-direction: column;
+      flex: 0 0 50%;
+
+    }
+  }
+
+
+  .main__form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    .input_span {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0;
+
+      label {
+        width: 100%;
+      }
+
+      input {
+        width: 99%;
+        height: 35px;
+      }
+    }
+
+    .label__textarea {
+      padding-left: 0;
+      height: 100%;
+
+      textarea {
+        height: 100px;
+      }
+    }
+
+    label {
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 15px;
+    }
+  }
+  .box__img {
+    .inner__img {
+      width: calc(100vw - 160px);
+      max-width: none;
+    }
+  }
 }
 
 @media screen and (max-width: 540px) {
+
   .header__body {
     .header__wrapper__text {
       .wrapper__text__h3 {
-        font-size: 16px !important;
+        font-size: 16px;
       }
 
       .wrapper__text__h1 {
-        font-size: 25px !important;
+        font-size: 25px;
 
       }
     }
@@ -73,8 +220,37 @@
       width: 100vw;
     }
   }
+  .we__do__bottom_block {
+    .we__do__bottom_wrapper {
+      flex-basis: 100%;
 
-}
-
-@media screen and (max-width: 320px) {
+    }
+  }
+  .statistics__items__wrap {
+    .statistics__item__inner {
+      flex-basis: 100%;
+    }
+  }
+  .weve__done {
+    .work__list__img__wrapper {
+      .work__img__inner {
+        flex-basis: 100%;
+        height: 100vw;
+      }
+    }
+  }
+  .pricing__tables {
+    .pricing__tables__cols {
+      .pricing__tables__col {
+        flex-basis: 100%;
+      }
+    }
+  }
+  .main__footer {
+    .main__footer__wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px
+    }
+  }
 }
